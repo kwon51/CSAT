@@ -2,22 +2,22 @@
 
 Static snapshot of an interactive analysis comparing how different LLMs (GPT, Claude, Gemini, Grok, Solar, EXAONE, ...) perform on Korean CSAT (수능) economics exam questions: accuracy, cost, response speed, and error breakdowns.
 
-## Model Leaderboard
+## 1. Model Leaderboard
 
 ![Composite index by model](images/leaderboard.png)
 
 | Rank | Model | Composite Index | Overall Pass@1 (%) | Valid-Response Pass@1 (%) | Error Rate (%) | Cost (USD) | Avg Response Time (s) |
 |---|---|---|---|---|---|---|---|
-| 1 | GPT-5.3 Codex (high) | 100.0 | 100.0 | 100.0 | 0.0 | 5.264 | 15.4 |
-| 2 | Gemini 3.1 Pro (default) | 99.7 | 99.7 | 99.7 | 0.0 | 7.962 | 15.2 |
-| 3 | Gemini 3.1 Pro (xhigh) | 99.3 | 99.3 | 99.3 | 0.0 | 8.087 | 16.0 |
-| 4 | Grok-4 (default) | 87.1 | 92.7 | 98.9 | 6.3 | 15.848 | 72.3 |
-| 5 | Grok-4 (max) | 86.2 | 91.7 | 97.9 | 6.3 | 15.727 | 68.9 |
-| 6 | GPT-5.3 Codex (default) | 54.3 | 54.3 | 54.3 | 0.0 | 0.508 | 1.4 |
-| 7 | Claude Sonnet 4.5 (default) | 53.3 | 53.3 | 53.3 | 0.0 | 1.223 | 2.3 |
-| 8 | Claude Sonnet 4.5 (max) | 52.3 | 52.3 | 52.3 | 0.0 | 1.236 | 2.2 |
-| 9 | K-Exaone 236B (default) | 49.9 | 66.3 | 99.0 | 33.0 | 0.796 | 115.8 |
-| 10 | Solar Pro3 (default) | 40.7 | 40.7 | 40.7 | 0.0 | 0.159 | 5.3 |
+| 1 | GPT-5.3 Codex (high) | 100.000 | 100.000 | 100.000 | 0.000 | 5.264 | 15.401 |
+| 2 | Gemini 3.1 Pro (default) | 99.667 | 99.667 | 99.667 | 0.000 | 7.962 | 15.157 |
+| 3 | Gemini 3.1 Pro (xhigh) | 99.333 | 99.333 | 99.333 | 0.000 | 8.087 | 15.986 |
+| 4 | Grok-4 (default) | 87.147 | 92.667 | 98.932 | 6.333 | 15.848 | 72.315 |
+| 5 | Grok-4 (max) | 86.207 | 91.667 | 97.865 | 6.333 | 15.727 | 68.906 |
+| 6 | GPT-5.3 Codex (default) | 54.333 | 54.333 | 54.333 | 0.000 | 0.508 | 1.437 |
+| 7 | Claude Sonnet 4.5 (default) | 53.333 | 53.333 | 53.333 | 0.000 | 1.223 | 2.297 |
+| 8 | Claude Sonnet 4.5 (max) | 52.333 | 52.333 | 52.333 | 0.000 | 1.236 | 2.183 |
+| 9 | K-Exaone 236B (default) | 49.875 | 66.333 | 99.005 | 33.000 | 0.796 | 115.772 |
+| 10 | Solar Pro3 (default) | 40.667 | 40.667 | 40.667 | 0.000 | 0.159 | 5.343 |
 
 ## 2. Score Performance By Points
 
