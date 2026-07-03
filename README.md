@@ -4,6 +4,8 @@ Static snapshot of an interactive analysis comparing how different LLMs (GPT, Cl
 
 ## Model Leaderboard
 
+![Composite index by model](images/leaderboard.png)
+
 | Rank | Model | Composite Index | Overall Pass@1 (%) | Valid-Response Pass@1 (%) | Error Rate (%) | Cost (USD) | Avg Response Time (s) |
 |---|---|---|---|---|---|---|---|
 | 1 | GPT-5.3 Codex (high) | 100.0 | 100.0 | 100.0 | 0.0 | 5.264 | 15.4 |
@@ -21,97 +23,31 @@ Static snapshot of an interactive analysis comparing how different LLMs (GPT, Cl
 
 ### Model by point-value heatmap: Overall Pass@1 (%)
 
-|  | 2 pt | 3 pt |
-|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 99.33 |
-| Gemini 3.1 Pro (xhigh) | 99.33 | 99.33 |
-| Grok-4 (default) | 94.00 | 91.33 |
-| Grok-4 (max) | 92.67 | 90.67 |
-| GPT-5.3 Codex (default) | 54.67 | 54.00 |
-| Claude Sonnet 4.5 (default) | 57.33 | 49.33 |
-| Claude Sonnet 4.5 (max) | 56.67 | 48.00 |
-| K-Exaone 236B (default) | 64.00 | 68.67 |
-| Solar Pro3 (default) | 46.67 | 34.67 |
+![Model by point-value heatmap: Overall Pass@1 (%)](images/points_overall.png)
 
 ### Model by point-value heatmap: Valid-Response Pass@1 (%)
 
-|  | 2 pt | 3 pt |
-|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 99.33 |
-| Gemini 3.1 Pro (xhigh) | 99.33 | 99.33 |
-| Grok-4 (default) | 99.30 | 98.56 |
-| Grok-4 (max) | 98.58 | 97.14 |
-| GPT-5.3 Codex (default) | 54.67 | 54.00 |
-| Claude Sonnet 4.5 (default) | 57.33 | 49.33 |
-| Claude Sonnet 4.5 (max) | 56.67 | 48.00 |
-| K-Exaone 236B (default) | 98.97 | 99.04 |
-| Solar Pro3 (default) | 46.67 | 34.67 |
+![Model by point-value heatmap: Valid-Response Pass@1 (%)](images/points_valid.png)
 
 ## 3. Score Performance By Image Presence
 
 ### Model by image-presence heatmap: Overall Pass@1 (%)
 
-|  | No Image | Image |
-|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 99.13 |
-| Gemini 3.1 Pro (xhigh) | 99.46 | 99.13 |
-| Grok-4 (default) | 92.43 | 93.04 |
-| Grok-4 (max) | 93.51 | 88.70 |
-| GPT-5.3 Codex (default) | 51.89 | 58.26 |
-| Claude Sonnet 4.5 (default) | 54.05 | 52.17 |
-| Claude Sonnet 4.5 (max) | 52.43 | 52.17 |
-| K-Exaone 236B (default) | 66.49 | 66.09 |
-| Solar Pro3 (default) | 42.16 | 38.26 |
+![Model by image-presence heatmap: Overall Pass@1 (%)](images/image_presence_overall.png)
 
 ### Model by image-presence heatmap: Valid-Response Pass@1 (%)
 
-|  | No Image | Image |
-|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 99.13 |
-| Gemini 3.1 Pro (xhigh) | 99.46 | 99.13 |
-| Grok-4 (default) | 98.28 | 100 |
-| Grok-4 (max) | 97.74 | 98.08 |
-| GPT-5.3 Codex (default) | 51.89 | 58.26 |
-| Claude Sonnet 4.5 (default) | 54.05 | 52.17 |
-| Claude Sonnet 4.5 (max) | 52.43 | 52.17 |
-| K-Exaone 236B (default) | 99.19 | 98.70 |
-| Solar Pro3 (default) | 42.16 | 38.26 |
+![Model by image-presence heatmap: Valid-Response Pass@1 (%)](images/image_presence_valid.png)
 
 ## 4. Point Value x Image Presence
 
 ### Model by point-image segment heatmap: Overall Pass@1 (%)
 
-|  | 2 pt / Image | 2 pt / No Image | 3 pt / Image | 3 pt / No Image |
-|---|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 98.18 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 98.89 | 98.18 | 100 |
-| Grok-4 (default) | 93.33 | 94.44 | 92.73 | 90.53 |
-| Grok-4 (max) | 86.67 | 96.67 | 90.91 | 90.53 |
-| GPT-5.3 Codex (default) | 55.00 | 54.44 | 61.82 | 49.47 |
-| Claude Sonnet 4.5 (default) | 50.00 | 62.22 | 54.55 | 46.32 |
-| Claude Sonnet 4.5 (max) | 48.33 | 62.22 | 56.36 | 43.16 |
-| K-Exaone 236B (default) | 60.00 | 66.67 | 72.73 | 66.32 |
-| Solar Pro3 (default) | 40.00 | 51.11 | 36.36 | 33.68 |
+![Model by point-image segment heatmap: Overall Pass@1 (%)](images/point_image_overall.png)
 
 ### Model by point-image segment heatmap: Valid-Response Pass@1 (%)
 
-|  | 2 pt / Image | 2 pt / No Image | 3 pt / Image | 3 pt / No Image |
-|---|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 98.18 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 98.89 | 98.18 | 100 |
-| Grok-4 (default) | 100 | 98.84 | 100 | 97.73 |
-| Grok-4 (max) | 98.11 | 98.86 | 98.04 | 96.63 |
-| GPT-5.3 Codex (default) | 55.00 | 54.44 | 61.82 | 49.47 |
-| Claude Sonnet 4.5 (default) | 50.00 | 62.22 | 54.55 | 46.32 |
-| Claude Sonnet 4.5 (max) | 48.33 | 62.22 | 56.36 | 43.16 |
-| K-Exaone 236B (default) | 97.30 | 100 | 100 | 98.44 |
-| Solar Pro3 (default) | 40.00 | 51.11 | 36.36 | 33.68 |
+![Model by point-image segment heatmap: Valid-Response Pass@1 (%)](images/point_image_valid.png)
 
 ## 5. Cost And Speed
 
@@ -121,127 +57,39 @@ Static snapshot of an interactive analysis comparing how different LLMs (GPT, Cl
 
 ### API error count by model (cases)
 
-| Model | Errors |
-|---|---|
-| Solar Pro3 (default) | 0 cases |
-| Claude Sonnet 4.5 (max) | 0 cases |
-| Claude Sonnet 4.5 (default) | 0 cases |
-| GPT-5.3 Codex (default) | 0 cases |
-| Gemini 3.1 Pro (xhigh) | 0 cases |
-| Gemini 3.1 Pro (default) | 0 cases |
-| GPT-5.3 Codex (high) | 0 cases |
-| Grok-4 (max) | 19 cases |
-| Grok-4 (default) | 19 cases |
-| K-Exaone 236B (default) | 99 cases |
+![API error count by model](images/error_count.png)
 
 ## 7. Additional Analysis By Difficulty
 
 ### Model by difficulty heatmap: Overall Pass@1 (%)
 
-|  | Low difficulty | Medium difficulty | High difficulty |
-|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 66.67 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 33.33 |
-| Grok-4 (default) | 95.95 | 90.32 | 0.00 |
-| Grok-4 (max) | 95.95 | 87.90 | 0.00 |
-| GPT-5.3 Codex (default) | 81.50 | 17.74 | 0.00 |
-| Claude Sonnet 4.5 (default) | 87.28 | 7.26 | 0.00 |
-| Claude Sonnet 4.5 (max) | 87.28 | 4.84 | 0.00 |
-| K-Exaone 236B (default) | 79.19 | 50.00 | 0.00 |
-| Solar Pro3 (default) | 56.65 | 19.35 | 0.00 |
+![Model by difficulty heatmap](images/difficulty.png)
 
 ## 8. Problem-Level Correctness Views
 
 ### Model accuracy by exam type: Overall Pass@1 (%)
 
-|  | CSAT 2026 | CSAT | MCSAT6 | MCSAT9 |
-|---|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 99.00 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 99.00 | 99.00 |
-| Grok-4 (default) | 100 | 100 | 98.94 | 97.83 |
-| Grok-4 (max) | 95.00 | 98.94 | 96.77 | 97.87 |
-| GPT-5.3 Codex (default) | 45.00 | 45.00 | 63.00 | 55.00 |
-| Claude Sonnet 4.5 (default) | 45.00 | 45.00 | 63.00 | 52.00 |
-| Claude Sonnet 4.5 (max) | 45.00 | 45.00 | 58.00 | 54.00 |
-| K-Exaone 236B (default) | 85.71 | 96.61 | 100 | 100 |
-| Solar Pro3 (default) | 45.00 | 39.00 | 44.00 | 39.00 |
+![Model accuracy by exam type: Overall Pass@1 (%)](images/exam_type.png)
 
 ### 2 pt / No Image: Overall Pass@1 (%)
 
-|  | CSAT | MCSAT6 | MCSAT9 |
-|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 96.30 |
-| Grok-4 (default) | 100 | 100 | 96.00 |
-| Grok-4 (max) | 100 | 100 | 96.15 |
-| GPT-5.3 Codex (default) | 51.43 | 64.29 | 48.15 |
-| Claude Sonnet 4.5 (default) | 57.14 | 67.86 | 62.96 |
-| Claude Sonnet 4.5 (max) | 60.00 | 60.71 | 66.67 |
-| K-Exaone 236B (default) | 100 | 100 | 100 |
-| Solar Pro3 (default) | 45.71 | 57.14 | 51.85 |
+![2 pt / No Image: Overall Pass@1 (%)](images/segment_2pt_noimage.png)
 
 ### 2 pt / Image: Overall Pass@1 (%)
 
-|  | CSAT | MCSAT6 | MCSAT9 |
-|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 100 |
-| Grok-4 (default) | 100 | 100 | 100 |
-| Grok-4 (max) | 91.67 | 100 | 100 |
-| GPT-5.3 Codex (default) | 26.67 | 72.73 | 56.52 |
-| Claude Sonnet 4.5 (default) | 33.33 | 72.73 | 39.13 |
-| Claude Sonnet 4.5 (max) | 26.67 | 72.73 | 39.13 |
-| K-Exaone 236B (default) | 87.50 | 100 | 100 |
-| Solar Pro3 (default) | 40.00 | 40.91 | 39.13 |
+![2 pt / Image: Overall Pass@1 (%)](images/segment_2pt_image.png)
 
 ### 3 pt / No Image: Overall Pass@1 (%)
 
-|  | CSAT | MCSAT6 | MCSAT9 |
-|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 100 |
-| Grok-4 (default) | 100 | 95.83 | 96.88 |
-| Grok-4 (max) | 100 | 92.00 | 96.97 |
-| GPT-5.3 Codex (default) | 38.24 | 51.85 | 58.82 |
-| Claude Sonnet 4.5 (default) | 38.24 | 55.56 | 47.06 |
-| Claude Sonnet 4.5 (max) | 35.29 | 44.44 | 50.00 |
-| K-Exaone 236B (default) | 95.24 | 100 | 100 |
-| Solar Pro3 (default) | 35.29 | 37.04 | 29.41 |
+![3 pt / No Image: Overall Pass@1 (%)](images/segment_3pt_noimage.png)
 
 ### 3 pt / Image: Overall Pass@1 (%)
 
-|  | CSAT | MCSAT6 | MCSAT9 |
-|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 95.65 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 95.65 | 100 |
-| Grok-4 (default) | 100 | 100 | 100 |
-| Grok-4 (max) | 100 | 95.24 | 100 |
-| GPT-5.3 Codex (default) | 62.50 | 65.22 | 56.25 |
-| Claude Sonnet 4.5 (default) | 43.75 | 56.52 | 62.50 |
-| Claude Sonnet 4.5 (max) | 50.00 | 56.52 | 62.50 |
-| K-Exaone 236B (default) | 100 | 100 | 100 |
-| Solar Pro3 (default) | 31.25 | 39.13 | 37.50 |
+![3 pt / Image: Overall Pass@1 (%)](images/segment_3pt_image.png)
 
 ### Model accuracy by category: Overall Pass@1 (%)
 
-|  | Finance | General Economics | International Economics | Macroeconomics | Microeconomics |
-|---|---|---|---|---|---|
-| GPT-5.3 Codex (high) | 100 | 100 | 100 | 100 | 100 |
-| Gemini 3.1 Pro (default) | 100 | 100 | 100 | 98.80 | 100 |
-| Gemini 3.1 Pro (xhigh) | 100 | 100 | 98.31 | 98.80 | 100 |
-| Grok-4 (default) | 100 | 96.55 | 96.23 | 100 | 100 |
-| Grok-4 (max) | 100 | 93.94 | 94.34 | 100 | 98.85 |
-| GPT-5.3 Codex (default) | 50.00 | 73.53 | 42.37 | 61.45 | 50.00 |
-| Claude Sonnet 4.5 (default) | 53.33 | 67.65 | 28.81 | 63.86 | 54.26 |
-| Claude Sonnet 4.5 (max) | 50.00 | 79.41 | 27.12 | 59.04 | 53.19 |
-| K-Exaone 236B (default) | 100 | 100 | 96.67 | 100 | 98.31 |
-| Solar Pro3 (default) | 33.33 | 58.82 | 27.12 | 46.99 | 39.36 |
+![Model accuracy by category: Overall Pass@1 (%)](images/category.png)
 
 ### Raw correctness grids (per exam)
 
